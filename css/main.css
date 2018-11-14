@@ -1,19 +1,15 @@
 /* Import fonts from CDN */
-@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Open+Sans');
-
-%fontheadings {
+@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Open+Sans");
+.principle .description-title, h2, h3, h5 {
   font-family: Nanum Pen Script, Pacifico, Arial, serif;
   color: #00802b;
 }
 
-%fontgeneral {
+.principle .description-text {
   font-family: Open Sans, Georgia, sans-serif;
   font-size: 12px;
   color: #404040;
 }
-
-$margin: 10px;
-$thumbsize: 25%;
 
 #wrapper {
   background-image: url("C:/Users/Andrei/project0/images/bgs/pines.jpg");
@@ -22,22 +18,16 @@ $thumbsize: 25%;
   background-attachment: fixed;
 }
 
-h2, h3, h5 {
-  @extend %fontheadings;
-}
-
 h2 {
   font-size: 72px;
 }
 
 /* principles.html */
 .principle {
-  margin-bottom: $margin;
-  .description-title {
-    @extend %fontheadings;
-    font-size: 48px;
-  }
-  .description-text {
-    @extend %fontgeneral;
-  }
+  margin-bottom: 10px;
 }
+.principle .description-title {
+  font-size: 48px;
+}
+
+/*# sourceMappingURL=main.css.map */
