@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content=""
+    <meta name="author" content="Andrei Kulchyk">
+    <meta name="description" content="cs50w/project0">
+    <title>Animated Head | Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid wrapper" id="wrapper">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Animated Head</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Great Animators</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  The 12 Principles
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item dropdown-link" href="#">All</a>
+                  <div class="dropdown-divider"></div>
+                  <ol class="dropdown-list">
+                    <li>
+                      <a class="dropdown-item" href="#">Squash and Stretch</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Anticipation</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Staging</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Straight Ahead/Pose to Pose</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Follow Through & Overlapping Action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Slow In & Slow Out</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Arcs</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Secondary Action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Timing</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Exaggeration</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Solid Drawing</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Appeal</a>
+                    </li>
+                  </ol>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Favorite Cartoons</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="container main">
+        <h2>My Favorite Cartoons</h2>
+        <p>Here are some of my favorite cartoons in random order.</p>
+        <div class="card mb-3" id="GravityFalls">
+          <img class="card-img-top" src="images/cartoons/gravity-falls.jpeg" alt="Gravity Falls">
+          <div class="card-body">
+            <h5 class="card-title">Gravity Falls</h5>
+            <blockquote class="blockquote card-text">
+              <p class="mb-0">Reality is just a illusion and the universe is a hologram.</p>
+              <footer class="blockquote-footer">Bill Cipher</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="card mb-3" id="AdventureTime">
+          <img class="card-img-top" src="images/cartoons/adventure-time.jpg" alt="Adventure Time">
+          <div class="card-body">
+            <h5 class="card-title">Adventure Time</h5>
+            <blockquote class="blockquote card-text">
+              <p class="mb-0">To live life, you need problems.If you get everything you want the minute you want it, what's the point of living?</p>
+              <footer class="blockquote-footer">Jake the Dog</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="card mb-3" id="Simpsons">
+          <img class="card-img-top" src="images/cartoons/simpsons.jpg" alt="The Simpsons">
+          <div class="card-body">
+            <h5 class="card-title">The Simpsons</h5>
+            <blockquote class="blockquote card-text">
+              <p class="mb-0">Your ideas are intriguing to me, and I wish to subscribe to your newsletter.</p>
+              <footer class="blockquote-footer">Homer Simpson</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="card mb-3" id="RickAndMorty">
+          <img class="card-img-top" src="images/cartoons/rick-and-morty.jpg" alt="Rick and Morty">
+          <div class="card-body">
+            <h5 class="card-title">Rick and Morty</h5>
+            <blockquote class="blockquote card-text">
+              <p class="mb-0">I'M PICKLE RICK!</p>
+              <footer class="blockquote-footer">Rick Sanchez</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div class="card mb-3" id="SouthPark">
+          <img class="card-img-top" src="images/cartoons/south-park.jpg" alt="South Park">
+          <div class="card-body">
+            <h5 class="card-title">South Park</h5>
+            <blockquote class="blockquote card-text">
+              <p class="mb-0">Oh my God, they killed Kenny! ...You bastards!</p>
+              <footer class="blockquote-footer">Stan Marsh and Kyle Broflovski</footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Great Animators</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">The 12 Principles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Favorite Cartoons</a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
