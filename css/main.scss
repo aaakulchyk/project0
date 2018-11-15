@@ -6,18 +6,26 @@ $margin: 10px;
 $thumbsize: 25%;
 $yellow: #ffffe6;
 $darkeryellow: #ffffcc;
+$lightgrey: #f2f2f2;
+$green: #00802b;
+$red: #cc0000;
 $handwritten: Nanum Pen Script, Pacifico, Arial, serif;
 
 
 %fontheadings {
   font-family: $handwritten;
-  color: #00802b;
+  color: $green;
 }
 
 %fontgeneral {
   font-family: Open Sans, Georgia, sans-serif;
   font-size: 12px;
   color: #404040;
+}
+
+%selected {
+  background-color: $lightgrey;
+  color: $red;
 }
 
 
@@ -75,6 +83,22 @@ h2, h3, h5 {
 
 h2 {
   font-size: 72px;
+}
+
+h2::selection, h3::selection, h5::selection {
+  @extend %selected;
+}
+
+a, p, span {
+  @extend %fontgeneral;
+}
+
+a::selection, p::selection, span::selection {
+  @extend %selected;
+}
+
+img::selection {
+  @extend %selected;
 }
 
 footer {
