@@ -108,10 +108,28 @@ h2 {
 
 .card-title {
   font-size: 3rem;
+  @media only screen and (max-width: 574px) {
+    font-size: 2.2rem;
+  }
+  @media only screen and (max-width: 350px) {
+    font-size: 1.5rem;
+  }
+  @media only screen and (max-width: 270px) {
+    font-size: 1.15rem;
+  }
 }
 
 .card-text p, .card-text footer {
   font-size: 1.2rem;
+  @media only screen and (max-width: 574px) {
+    font-size: 0.9rem;
+  }
+  @media only screen and (max-width: 350px) {
+    font-size: 0.7rem;
+  }
+  @media only screen and (max-width: 270px) {
+    font-size: 0.5rem;
+  }
 }
 
 h2::selection, h3::selection, h5::selection, a::selection, p::selection, span::selection, small::selection, th::selection, td::selection, li::selection, .blockquote-footer::selection, img::selection {
