@@ -1,6 +1,6 @@
 /* Import fonts from CDN */
 @import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Open+Sans");
-.principle .description-title, h2, h3, h5 {
+.principle .description-title, .slide-title, h2, h3, h5 {
   font-family: Nanum Pen Script, Pacifico, Arial, serif;
   color: #00802b;
 }
@@ -12,14 +12,31 @@
 }
 
 #wrapper {
-  background-image: url("C:/Users/Andrei/project0/images/bgs/pines.jpg");
+  background-image: url("C:/Users/Andrei/project0/images/bgs/bg.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
+  padding: 0px;
+}
+
+.container {
+  background-color: #fff;
+  opacity: 0.95;
+}
+
+.main {
+  padding-top: 150px;
 }
 
 h2 {
   font-size: 72px;
+}
+
+/* index.html */
+.slide-title {
+  color: #fff;
+  font-size: 36px;
+  text-shadow: 1px 1px 1px black;
 }
 
 /* principles.html */

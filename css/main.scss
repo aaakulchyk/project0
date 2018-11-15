@@ -16,10 +16,20 @@ $margin: 10px;
 $thumbsize: 25%;
 
 #wrapper {
-  background-image: url("C:/Users/Andrei/project0/images/bgs/pines.jpg");
+  background-image: url("C:/Users/Andrei/project0/images/bgs/bg.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-attachment: fixed;
+  padding: 0px;
+}
+
+.container {
+  background-color: #fff;
+  opacity: 0.95;
+}
+
+.main {
+  padding-top: 150px;
 }
 
 h2, h3, h5 {
@@ -28,6 +38,14 @@ h2, h3, h5 {
 
 h2 {
   font-size: 72px;
+}
+
+/* index.html */
+.slide-title {
+  @extend %fontheadings;
+  color: #fff;
+  font-size: 36px;
+  text-shadow: 1px 1px 1px black;
 }
 
 /* principles.html */
