@@ -6,7 +6,7 @@ $margin: 10px;
 $thumbsize: 25%;
 $yellow: #ffffe6;
 $darkeryellow: #ffffcc;
-$lightgrey: #f2f2f2;
+$selectionbg: #ffe6e6;
 $green: #00802b;
 $red: #cc0000;
 $handwritten: Nanum Pen Script, Pacifico, Arial, serif;
@@ -24,7 +24,7 @@ $handwritten: Nanum Pen Script, Pacifico, Arial, serif;
 }
 
 %selected {
-  background-color: $lightgrey;
+  background-color: $selectionbg;
   color: $red;
 }
 
@@ -49,18 +49,19 @@ header nav {
       font-size: 1.15rem;
     }
   }
-  .dropdown-menu {
-    background-color: $darkeryellow;
-  }
-  .nav-link, .dropdown-item {
-    @extend %fontgeneral;
-    font-size: 14px;
-  }
-  .nav-link:hover, .dropdown-item:hover {
-    background-color: $yellow;
-    font-family: $handwritten;
-    font-size: 1.2em;
-  }
+}
+
+.dropdown-menu {
+  background-color: $darkeryellow;
+}
+.nav-link, .dropdown-item {
+  @extend %fontgeneral;
+  font-size: 14px;
+}
+.nav-link:hover, .dropdown-item:hover {
+  background-color: $yellow;
+  font-family: $handwritten;
+  font-size: 1.2em;
 }
 
 .container.main {
@@ -85,20 +86,20 @@ h2 {
   font-size: 72px;
 }
 
-h2::selection, h3::selection, h5::selection {
+.card-title {
+  font-size: 3rem;
+}
+
+.card-text p, .card-text footer {
+  font-size: 1.2rem;
+}
+
+h2::selection, h3::selection, h5::selection, a::selection, p::selection, span::selection, small::selection, th::selection, td::selection, li::selection, .blockquote-footer::selection, img::selection {
   @extend %selected;
 }
 
-a, p, span {
+a, p, span, small, th, td, li .blockquote-footer {
   @extend %fontgeneral;
-}
-
-a::selection, p::selection, span::selection {
-  @extend %selected;
-}
-
-img::selection {
-  @extend %selected;
 }
 
 footer {
@@ -110,6 +111,17 @@ footer {
   @extend %fontheadings;
   color: #fff;
   font-size: 36px;
+}
+
+.slide-text {
+  @extend %fontgeneral;
+  color: #fff;
+  font-size: 0.8em;
+}
+
+/* animators.html */
+th .img-thumbnail {
+  width: 200px;
 }
 
 /* principles.html */

@@ -5,14 +5,14 @@
   color: #00802b;
 }
 
-.principle .description-text, a, p, span, header nav .nav-link, header nav .dropdown-item {
+.principle .description-text, .slide-text, a, p, span, small, th, td, li .blockquote-footer, .nav-link, .dropdown-item {
   font-family: Open Sans, Georgia, sans-serif;
   font-size: 12px;
   color: #404040;
 }
 
-img::selection, a::selection, p::selection, span::selection, h2::selection, h3::selection, h5::selection {
-  background-color: #f2f2f2;
+h2::selection, h3::selection, h5::selection, a::selection, p::selection, span::selection, small::selection, th::selection, td::selection, li::selection, .blockquote-footer::selection, img::selection {
+  background-color: #ffe6e6;
   color: #cc0000;
 }
 
@@ -40,13 +40,16 @@ header nav .navbar-brand {
     font-size: 1.15rem;
   }
 }
-header nav .dropdown-menu {
+
+.dropdown-menu {
   background-color: #ffffcc;
 }
-header nav .nav-link, header nav .dropdown-item {
+
+.nav-link, .dropdown-item {
   font-size: 14px;
 }
-header nav .nav-link:hover, header nav .dropdown-item:hover {
+
+.nav-link:hover, .dropdown-item:hover {
   background-color: #ffffe6;
   font-family: Nanum Pen Script, Pacifico, Arial, serif;
   font-size: 1.2em;
@@ -73,6 +76,14 @@ h2 {
   font-size: 72px;
 }
 
+.card-title {
+  font-size: 3rem;
+}
+
+.card-text p, .card-text footer {
+  font-size: 1.2rem;
+}
+
 footer {
   background-color: #fff;
 }
@@ -81,6 +92,16 @@ footer {
 .slide-title {
   color: #fff;
   font-size: 36px;
+}
+
+.slide-text {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+/* animators.html */
+th .img-thumbnail {
+  width: 200px;
 }
 
 /* principles.html */
