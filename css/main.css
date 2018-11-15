@@ -22,6 +22,7 @@ h2::selection, h3::selection, h5::selection, a::selection, p::selection, span::s
   background-position: top;
   background-attachment: fixed;
   padding: 0px;
+  padding-bottom: 30px;
 }
 
 header nav {
