@@ -1,8 +1,16 @@
 /* Import fonts from CDN */
 @import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Open+Sans');
 
+
+$margin: 10px;
+$thumbsize: 25%;
+$yellow: #ffffe6;
+$darkeryellow: #ffffcc;
+$handwritten: Nanum Pen Script, Pacifico, Arial, serif;
+
+
 %fontheadings {
-  font-family: Nanum Pen Script, Pacifico, Arial, serif;
+  font-family: $handwritten;
   color: #00802b;
 }
 
@@ -12,8 +20,6 @@
   color: #404040;
 }
 
-$margin: 10px;
-$thumbsize: 25%;
 
 #wrapper {
   background-image: url("C:/Users/Andrei/project0/images/bgs/bg.jpg");
@@ -21,6 +27,32 @@ $thumbsize: 25%;
   background-position: top;
   background-attachment: fixed;
   padding: 0px;
+}
+
+header nav {
+  background-color: $yellow;
+  .navbar-brand {
+    @extend %fontheadings;
+    font-size: 3rem;
+    @media only screen and (max-width: 350px) {
+      font-size: 2rem;
+    }
+    @media only screen and (max-width: 270px) {
+      font-size: 1.15rem;
+    }
+  }
+  .dropdown-menu {
+    background-color: $darkeryellow;
+  }
+  .nav-link, .dropdown-item {
+    @extend %fontgeneral;
+    font-size: 14px;
+  }
+  .nav-link:hover, .dropdown-item:hover {
+    background-color: $yellow;
+    font-family: $handwritten;
+    font-size: 1.2em;
+  }
 }
 
 .container.main {
@@ -38,6 +70,7 @@ $thumbsize: 25%;
 
 h2, h3, h5 {
   @extend %fontheadings;
+  text-shadow: 1px 1px 1px black;
 }
 
 h2 {
@@ -45,7 +78,7 @@ h2 {
 }
 
 footer {
-  background-color: #1a0d00;
+  background-color: #fff;
 }
 
 /* index.html */
@@ -53,7 +86,6 @@ footer {
   @extend %fontheadings;
   color: #fff;
   font-size: 36px;
-  text-shadow: 1px 1px 1px black;
 }
 
 /* principles.html */

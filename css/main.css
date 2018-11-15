@@ -1,11 +1,11 @@
 /* Import fonts from CDN */
 @import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Open+Sans");
-.principle .description-title, .slide-title, h2, h3, h5 {
+.principle .description-title, .slide-title, h2, h3, h5, header nav .navbar-brand {
   font-family: Nanum Pen Script, Pacifico, Arial, serif;
   color: #00802b;
 }
 
-.principle .description-text {
+.principle .description-text, header nav .nav-link, header nav .dropdown-item {
   font-family: Open Sans, Georgia, sans-serif;
   font-size: 12px;
   color: #404040;
@@ -17,6 +17,34 @@
   background-position: top;
   background-attachment: fixed;
   padding: 0px;
+}
+
+header nav {
+  background-color: #ffffe6;
+}
+header nav .navbar-brand {
+  font-size: 3rem;
+}
+@media only screen and (max-width: 350px) {
+  header nav .navbar-brand {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 270px) {
+  header nav .navbar-brand {
+    font-size: 1.15rem;
+  }
+}
+header nav .dropdown-menu {
+  background-color: #ffffcc;
+}
+header nav .nav-link, header nav .dropdown-item {
+  font-size: 14px;
+}
+header nav .nav-link:hover, header nav .dropdown-item:hover {
+  background-color: #ffffe6;
+  font-family: Nanum Pen Script, Pacifico, Arial, serif;
+  font-size: 1.2em;
 }
 
 .container.main {
@@ -32,19 +60,22 @@
   padding-right: 0px;
 }
 
+h2, h3, h5 {
+  text-shadow: 1px 1px 1px black;
+}
+
 h2 {
   font-size: 72px;
 }
 
 footer {
-  background-color: #1a0d00;
+  background-color: #fff;
 }
 
 /* index.html */
 .slide-title {
   color: #fff;
   font-size: 36px;
-  text-shadow: 1px 1px 1px black;
 }
 
 /* principles.html */
